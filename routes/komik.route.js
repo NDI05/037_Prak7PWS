@@ -11,7 +11,7 @@ router.get("/", komikController.getAllKomiks);
 
 router.get("/:id", komikController.getKomikById);
 
-router.put("/:id", upload.single(), komikController.updateKomik);
+router.put("/:id", upload.single("image"), komikController.updateKomik);
 
 router.delete("/:id", komikController.deleteKomik);
 
