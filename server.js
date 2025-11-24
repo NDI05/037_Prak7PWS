@@ -7,6 +7,7 @@ const routes = require('./routes/index.route');
 
 // Middleware to parse JSON requests
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // Sample route
 app.get('/', (req, res) => {
