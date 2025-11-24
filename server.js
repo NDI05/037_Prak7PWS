@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.use('/api', routes);
+app.use('/api/v1', routes);
 
 // Start the server after establishing database connection
 connectionDatabase().then(() => {
